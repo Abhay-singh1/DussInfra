@@ -1,0 +1,30 @@
+Web Developer Coding Interview
+
+Table columns
+Id / Serial Number
+Company Name
+Quantity of resourceAlias booked ( show the list of resourceAlias on
+hover - optional )
+Payment Status
+Payable Amount
+Due / Pending Amount
++ Action button
+Following are the operations to be done :-
+Iterate the data provided below in a table with the columns mentioned
+above
+Show a + action button on the end of the row and on click of the
+action button the user should be able to enter a amount which will be
+deducted from the payable amount and the new amount ( post
+deduction from the payable amount ) is to be displayed in the due
+
+3.
+4.
+1.
+2.
+amount table element
+For the invoices that are paid the table row should have a green
+background and for those pending with red background
+Need to show 2 fields anywhere on the page which will be showing the
+following
+Total payable amount for all the invoices
+Total dues pending for all h
