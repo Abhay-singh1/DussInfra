@@ -18,22 +18,32 @@ const MainTable = () => {
   const styles ={
     backgroundColor: open ? 'red': 'green'
   }
-  let sum, sum1;
+  let sum =0;
+  let sum1 = 0;
+  let n1=[];
+  let n2 = [];
   rows.map((row) => {
-      let n1= row.payableAmount
-      let n2= row.bookingAmount
-      let num =parseInt(n1)
-      let num1 =parseInt(n2)
-     sum += n1
-     sum1 += n2
+        n1.push(parseInt(row.payableAmount))
+       n2.push(parseInt(row.bookingAmount))
   })
+  
+  for (const value of n1){
+    sum += value
+  }
+  for (const value of n2){
+    sum1 += value
+  }
+  console.log(sum,sum1)
+
+
+
   return (<>
     <div class='Header'>
         <h1>Budget Table</h1>
         
         <div class="budget-section">
-            <h4>Total Amount: </h4>
-            <h4>Total Invoice: </h4>
+            <h4>Total Amount: {sum} &nbsp; </h4>
+            <h4>Total Invoice: {sum1} &nbsp; </h4>
         </div>
         
     </div>
